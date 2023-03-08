@@ -1,4 +1,5 @@
 import React from "react";
+import HomeRight from "../../Components/HomeRight/HomeRight";
 import PostCard from "../../Components/PostCard/PostCard";
 // import HomeRight from "../../Components/HomeRight/HomeRight";
 // import PostCard from "../../Components/PostCard/PostCard";
@@ -56,9 +57,9 @@ const HomePage = () => {
             ))}
           </div>
         </div>
-        {/* <div className="w-[35%]">
+        <div className="w-[35%]">
           <HomeRight/>
-        </div> */}
+        </div>
       </div> 
     </div>
   );
