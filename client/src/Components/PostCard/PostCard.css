@@ -1,6 +1,9 @@
+p{
+  font-size: small;
+}
 .commentBox {
     box-sizing: border-box;
-    
+    font-size: small;
     
     
     /* other styles */

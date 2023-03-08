@@ -67,7 +67,7 @@ const PostCard = ({
           <div className="w-[90%]">
           
               
-              <span className="font-semibold"> {username} </span>
+              <span className="font-semibold text-sm"> {username} </span>
               <span className="commentBox">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero placeat facilis impedit, qui quia, aut velit ipsa, autem perspiciatis cumque et provident porro laboriosam eveniet quaerat quas aliquid eos maiores!
                 
