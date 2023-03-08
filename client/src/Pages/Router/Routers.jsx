@@ -2,7 +2,8 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import HomePage from '../HomePage/HomePage'
-// import Profile from '../Profile/Profile'
+import Profile from '../Profile/Profile'
+
 
 const Routers = () => {
   return (
@@ -13,7 +14,7 @@ const Routers = () => {
         
       <Routes>
         <Route path="/" element={<HomePage/>}></Route>
-        {/* <Route path="/profile" element={<Profile/>}></Route> */}
+        <Route path="/username" element={<Profile/>}></Route>
       </Routes>
     </div>
   )
