@@ -1,4 +1,5 @@
 import React from "react";
+import PostCard from "../../Components/PostCard/PostCard";
 // import HomeRight from "../../Components/HomeRight/HomeRight";
 // import PostCard from "../../Components/PostCard/PostCard";
 // import Sidebar from "../../Components/Sidebar/Sidebar";
@@ -41,7 +42,7 @@ const HomePage = () => {
               />
             ))}
           </div>
-          {/* <div className="space-y-10 postsBox">
+          <div className="space-y-10 postsBox">
             {posts.map((item) => (
               <PostCard
                 userProfileImage={
@@ -53,7 +54,7 @@ const HomePage = () => {
                 numberOfLikes={1244}
               />
             ))}
-          </div> */}
+          </div>
         </div>
         {/* <div className="w-[35%]">
           <HomeRight/>
