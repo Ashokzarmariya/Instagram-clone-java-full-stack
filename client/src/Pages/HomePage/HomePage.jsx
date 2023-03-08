@@ -2,7 +2,7 @@ import React from "react";
 // import HomeRight from "../../Components/HomeRight/HomeRight";
 // import PostCard from "../../Components/PostCard/PostCard";
 // import Sidebar from "../../Components/Sidebar/Sidebar";
-// import StoryCircle from "../../Components/StoryCircle/StoryCircle";
+import StoryCircle from "../../Components/StoryCircle/StoryCircle";
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -26,9 +26,9 @@ const HomePage = () => {
   ];
   return (
     <div className=" ">
-     HomePage
+     
 
-      {/* <div className="mt-10 flex px-24 justify-between">
+       <div className="mt-10 flex px-24 justify-between">
         <div className="flex flex-col justify-center items-center w-[60%]">
           <div className="flex space-x-2 ">
             {[1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => (
@@ -41,7 +41,7 @@ const HomePage = () => {
               />
             ))}
           </div>
-          <div className="space-y-10 postsBox">
+          {/* <div className="space-y-10 postsBox">
             {posts.map((item) => (
               <PostCard
                 userProfileImage={
@@ -53,12 +53,12 @@ const HomePage = () => {
                 numberOfLikes={1244}
               />
             ))}
-          </div>
+          </div> */}
         </div>
-        <div className="w-[35%]">
+        {/* <div className="w-[35%]">
           <HomeRight/>
-        </div>
-      </div> */}
+        </div> */}
+      </div> 
     </div>
   );
 };
