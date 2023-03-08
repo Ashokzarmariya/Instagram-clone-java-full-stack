@@ -1,9 +1,6 @@
 import React from "react";
 import HomeRight from "../../Components/HomeRight/HomeRight";
 import PostCard from "../../Components/PostCard/PostCard";
-// import HomeRight from "../../Components/HomeRight/HomeRight";
-// import PostCard from "../../Components/PostCard/PostCard";
-// import Sidebar from "../../Components/Sidebar/Sidebar";
 import StoryCircle from "../../Components/StoryCircle/StoryCircle";
 import "./HomePage.css";
 
@@ -33,7 +30,7 @@ const HomePage = () => {
        <div className="mt-10 flex px-24 justify-between">
         <div className="flex flex-col justify-center items-center w-[60%]">
           <div className="flex space-x-2 ">
-            {[1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => (
+            {[1, 1, 1, 1, 1, 1, 1].map((item, index) => (
               <StoryCircle
                 key={index}
                 image={
