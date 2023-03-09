@@ -14,6 +14,7 @@ import {GoLocation} from "react-icons/go";
 import { GrEmoji } from "react-icons/gr";
 import { CloseButton } from "@chakra-ui/close-button";
 import { Button } from "@chakra-ui/button";
+import { uploadToCloudinary } from "../../Config/UploadToCloudinary";
 
 
 const CreatePostModal = ({ onOpen, isOpen, onClose }) => {
@@ -62,6 +63,11 @@ const CreatePostModal = ({ onOpen, isOpen, onClose }) => {
     }
   };
 
+  const handleSubmit=async()=>{
+    const url = await uploadToCloudinary(file);
+    console.log("url --- ",url)
+  }
+
   return (
     <div>
       <Modal
@@ -80,7 +86,7 @@ const CreatePostModal = ({ onOpen, isOpen, onClose }) => {
             
             <div className="flex justify-between py-1 px-10 items-center">
                 <p>Create New Post</p>
-                <Button className="inline-flex" colorScheme='blue' size={"sm"} variant='ghost'>Share</Button>
+                <Button onClick={handleSubmit} className="inline-flex" colorScheme='blue' size={"sm"} variant='ghost'>Share</Button>
             </div>
           
           <hr className="hrLine" />
