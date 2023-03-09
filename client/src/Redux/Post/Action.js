@@ -2,7 +2,7 @@ import { CREATE_NEW_POST, GET_USER_POST } from "./ActionType";
 
 export const createPost = (dispatch) => async (data) => {
 
-  const res = await fetch("http://localhost:5454/api/post/create", {
+  const res = await fetch("http://localhost:5454/api/posts/create", {
 
     method: "POST",
 
@@ -23,7 +23,7 @@ export const createPost = (dispatch) => async (data) => {
 
 export const findUserPost = (dispatch) => async (data) => {
 
-    const res = await fetch("http://localhost:5454/api/post/user", {
+    const res = await fetch("http://localhost:5454/api/posts/user", {
   
       method: "GET",
   
