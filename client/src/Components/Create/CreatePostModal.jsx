@@ -17,6 +17,8 @@ import { Button } from "@chakra-ui/button";
 import { uploadToCloudinary } from "../../Config/UploadToCloudinary";
 
 
+
+
 const CreatePostModal = ({ onOpen, isOpen, onClose }) => {
   const finalRef = React.useRef(null);
   const [file, setFile] = useState(null);
@@ -64,7 +66,8 @@ const CreatePostModal = ({ onOpen, isOpen, onClose }) => {
   };
 
   const handleSubmit=async()=>{
-    const url = await uploadToCloudinary(file);
+    const url = await  uploadToCloudinary(file)
+    // const result=uploadClou
     console.log("url --- ",url)
   }
 
